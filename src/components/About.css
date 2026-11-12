@@ -1,0 +1,355 @@
+
+/* ABOUT SECTION */
+
+.about-section {
+  position: relative;
+  padding: 110px 0;
+  border-bottom: 1px solid #ffffff15;
+  overflow: hidden;
+}
+
+.about-glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(130px);
+  pointer-events: none;
+  opacity: 0.13;
+}
+
+.glow-left {
+  background: #8b5cf6;
+  top: 200px;
+  left: -200px;
+}
+
+.glow-right {
+  background: #6366f1;
+  right: -180px;
+  top: 500px;
+}
+
+/* HEADING */
+
+.about-heading {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 55px;
+}
+
+.about-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: #a78bfa;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  margin-bottom: 20px;
+}
+
+.about-heading h2 {
+  font-size: clamp(38px, 5vw, 58px);
+  line-height: 1.2;
+  letter-spacing: -2px;
+}
+
+.about-heading h2 span,
+.about-main-card h3 span,
+.interests-heading h3 span {
+  color: #a78bfa;
+}
+
+.about-heading > p {
+  margin-top: 18px;
+  color: #9999aa;
+  font-size: 15px;
+}
+
+/* MAIN LAYOUT */
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 25px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-main-card,
+.education-card,
+.tech-card {
+  background: linear-gradient(
+    145deg,
+    #171724,
+    #101019
+  );
+  border: 1px solid #ffffff17;
+  border-radius: 20px;
+  padding: 32px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.about-main-card:hover,
+.education-card:hover,
+.tech-card:hover {
+  border-color: #a78bfa70;
+  box-shadow: 0 15px 50px #8b5cf610;
+}
+
+.about-main-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 410px;
+}
+
+.about-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  color: #a78bfa;
+}
+
+.about-number {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #88889a;
+}
+
+.about-main-card h3 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.about-main-card > p {
+  color: #a1a1b1;
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 17px;
+}
+
+.about-signature {
+  margin-top: 15px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff15;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #c4b5fd;
+  font-size: 12px;
+}
+
+/* RIGHT SIDE */
+
+.about-side {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.education-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.education-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c4b5fd;
+  background: #8b5cf620;
+  border: 1px solid #a78bfa40;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+
+.education-card h3,
+.tech-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.education-card > p {
+  color: #b6a1f8;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.education-location {
+  color: #858597;
+  font-size: 12px;
+}
+
+.education-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 9px 12px;
+  background: #ffffff08;
+  border-radius: 20px;
+  font-size: 11px;
+  color: #c4b5fd;
+}
+
+.education-status span {
+  width: 7px;
+  height: 7px;
+  background: #4ade80;
+  border-radius: 50%;
+}
+
+/* TECHNOLOGY CARD */
+
+.tech-card {
+  flex: 1;
+}
+
+.about-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.about-tech-list span {
+  display: inline-block;
+  padding: 10px 14px;
+  background: #ffffff08;
+  border: 1px solid #ffffff15;
+  color: #c4b5fd;
+  font-size: 12px;
+  border-radius: 8px;
+  cursor: default;
+  transition: 0.3s;
+}
+
+.about-tech-list span:hover {
+  background: #8b5cf620;
+  border-color: #a78bfa;
+}
+
+/* INTERESTS */
+
+.interests-section {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+.interests-heading {
+  margin-bottom: 35px;
+}
+
+.interests-heading h3 {
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.interest-card {
+  position: relative;
+  min-height: 195px;
+  padding: 25px 20px;
+  background: #11111b;
+  border: 1px solid #ffffff15;
+  border-radius: 15px;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.interest-card:hover {
+  border-color: #a78bfa80;
+  background: #171525;
+}
+
+.interest-icon {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8b5cf620;
+  color: #b9a0ff;
+  border-radius: 12px;
+  margin-bottom: 22px;
+}
+
+.interest-card h4 {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.interest-card p {
+  font-size: 12px;
+  color: #9292a3;
+  line-height: 1.8;
+}
+
+.interest-arrow {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  color: #8b5cf6;
+  font-size: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1000px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    padding: 75px 0;
+  }
+
+  .about-heading h2 {
+    font-size: 38px;
+  }
+
+  .about-main-card,
+  .education-card,
+  .tech-card {
+    padding: 23px;
+  }
+
+  .about-main-card {
+    min-height: auto;
+  }
+
+  .about-main-card h3 {
+    font-size: 22px;
+  }
+
+  .interests-section {
+    margin-top: 70px;
+  }
+
+  .interests-heading h3 {
+    font-size: 27px;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+}
